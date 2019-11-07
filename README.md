@@ -5,7 +5,7 @@
 
 ## Names:
 
-Arianna Kazemi
+[Arianna Kazemi](team/ARIANNA_KAZEMI.md)
 
 [Efosa Ighodaro](google.com) 
 
