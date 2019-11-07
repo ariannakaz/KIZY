@@ -1,9 +1,9 @@
 # KIZY
  CS 326 Project Fall 2019
 
-## Team Name: KIZY
+### Team Name: KIZY
 
-## Names:
+### Names:
 
 [Arianna Kazemi](team/ARIANNA_KAZEMI.md)
 
@@ -14,7 +14,7 @@ Alexander Yang
 Kelly Zeng
 
 
-## Overview of Project:
+### Overview of Project:
 
 
-## Topic Requirements:
+### Topic Requirements:
