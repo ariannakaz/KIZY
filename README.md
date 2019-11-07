@@ -7,7 +7,7 @@
 
 [Arianna Kazemi](team/ARIANNA_KAZEMI.md)
 
-[Efosa Ighodaro](google.com) 
+[Efosa Ighodaro](team/EFOSA_IGHODARO.md) 
 
 Alexander Yang 
 
