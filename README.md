@@ -9,7 +9,7 @@
 
 [Efosa Ighodaro](team/EFOSA_IGHODARO.md) 
 
-Alexander Yang 
+[Alexander Yang](team/KELLY_ZENG.md)
 
 [Kelly Zeng](team/KELLY_ZENG.md)
 
