@@ -1,5 +1,5 @@
 # KIZY
-## CS 326 Project Fall 2019
+ CS 326 Project Fall 2019
 
 ## Team Name: KIZY
 
