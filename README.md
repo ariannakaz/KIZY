@@ -18,3 +18,5 @@
 
 
 ## Topic Requirements:
+Mobile 
+Data Storage
