@@ -5,6 +5,7 @@ Team Name: KIZY
 
 Names:
 Arianna Kazemi
+Efosa Ighodaro
 
 
 Overview of Project:
