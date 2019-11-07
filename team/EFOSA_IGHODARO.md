@@ -1,1 +1,1 @@
-
+Hi, my name is Efosa Ighodaro. I am a senior computer science major at University of Massachusetts Amherst. I am most confident in my skills in Java and Javascript. Most of the things that I have come across in this web programmming class are completely new to me. 
