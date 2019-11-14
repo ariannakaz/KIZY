@@ -15,8 +15,9 @@
 
 
 ## Overview of Project:
-
+Poise:
+A website that designs a workout combining mental and physical exercises with the goal of reducing stress and anxiety.
 
 ## Topic Requirements:
-Mobile 
-Data Storage
+*Mobile 
+*Data Storage
