@@ -38,3 +38,13 @@ div{
     display: block;
   }
 }
+.likert form{
+  float: left;
+}
+.likert li{
+  list-style: none;
+  display: inline;
+}
+#question2 {
+  display: none;
+}
