@@ -1,10 +1,14 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
+//const db = require("../db");
 
-var Exercises = new mongoose.Schema({
-    name: [],
-    category: [],
-    description: []
+
+// Create a model from the schema
+const ExerciseSchema = new mongoose.Schema({
+    name: String,
+    category: String,
+    description: String
 });
 
-// Export this schema to make it available from other files
-module.exports = mongoose.model('Exercise', exercises)
+const exercises =mongoose.model("exercises", ExerciseSchema);
+// Export the Song model.
+module.exports = exercises;
