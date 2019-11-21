@@ -1,33 +1,24 @@
-// Require Express and Body Parser support.
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require('express');
+const mongoose = require('mongoose');
+const route = require('./route');
 
-// Create a new top-level Router and add the body parser middleware.
-// Note, we are using body parser support to parse JSON that is being
-// sent from the client. This will automatically parse JSON and assign
-// a corresponding JavaScript object to the Request object's `body`
-// property.
-const router = express.Router();
-
-// This will allow the router to parse both json and form data.
-router.use(bodyParser.json());
-
-// This will use the static middleware
-router.use(express.static('public'));
-
-// Mount our API router to the main router with the `/api/songs` prefix.
-//router.use('/api/songs', require('./api/songs'));
-
-// Add redirects to html files.
-router.get('/', (req, res) => {
-  res.redirect('/shell.html');
-});
-
-// Create out express application and add our main router.
 const app = express();
-app.use(router);
+app.use(express.json()); // Make sure it comes back as json
 
-// Listen on port 3000.
-app.listen(3000, () => {
-  console.log('Serving running on port 3000');
-});
+const connectionURL = process.env.MONGO_URL;
+
+const username = process.argv[2].split('=')[1]
+const pw = process.argv[3].split('=')[1]
+console.log(`Hello, ${username}, ${pw}`)
+
+mongoose.connect("mongodb+srv://"+username+":"+pw+"@cluster0-ii2lz.mongodb.net/exercises?retryWrites=true&w=majority", 
+  { useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true });
+
+app.use(route);
+
+app.listen(3000, () => { console.log('Server is running...') });
+
+
+
