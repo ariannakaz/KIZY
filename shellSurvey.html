@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Shell Website</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- below mobile device adapted by Alex -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="shell.js" defer></script>
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <h1>Survey</h1>
+    
+    <div class="likert">
+    
+    <form id="q1">
+    <p>Question 1: How much minutes do you have?</p>
+    <li><input type="radio" name="number" value="5"><label>5</label></li>
+    <li> <input type="radio" name="number" value="10"> <label>10</label></li>
+    <li><input type="radio" name="number" value="15"> <label >15</label></li>
+    <li><input type="radio" name="number" value="20"> <label>20</label> </li>
+    <li> <input type="radio" name="number" value="30"> <label>30</label></li>
+    </form>
+    </div>
+    <br>
+    <div id="question2">
+    <p>Question 2: What kind of excerises do you want?</p>
+    <form action="shellMain.html">
+        <input type="submit" value="physical" name="physical"  id = "bttn"/>
+        <input type="submit" value="mental" name="mental"  id = "bttn"/>
+        <input type="submit" value="both?" name="both"  id = "bttn"/>
+        <input type="submit" value="i dont care" name="idc"  id = "bttn"/>
+    </form>
+    </div>
