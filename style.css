@@ -33,10 +33,9 @@ div{
 }
 
 
-
-/* .likert form{
+.likert form{
   float: left;
-} */
+}
 
 .likert li{
   list-style: none;
@@ -66,3 +65,15 @@ body {
   margin: 0px;
 }
 /* edit by alex */
+
+/* new edit efosa */
+#question2 {
+  display: none;
+}
+#challenge {
+  display: none;
+
+}
+#next {
+  display: none;
+}

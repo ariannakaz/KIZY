@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="shell.js" defer></script>
+    <script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <!-- added div by alex -->
-    <div style = "display:flex;">
-    <form action="shellSurvey.html">
-        <!-- style edit by alex -->
-        <input type="submit" value="physical" id = "bttn" />
+    <div id = "ptab">
+    <form>
+        <input type="button" value="physical" id = "bttn" />
     </form>
-    <form action="shellSurvey.html">
-        <!-- style edit by alex -->
-        <input type="submit" value="mental" id = "bttn" />
+    </div>
+    <div id = "mtab">
+    <form>
+        <input type="button" value="mental" id = "bttn" />
     </form>
     </div>
     <div id="challenge">
         <p>Today's Challenge</p>
-      <form action="shellSurvey.html">
+      <form action="shellPhysical.html" id = "type">
         <input type="submit" value="GO" />
     </form>  
     </div>
