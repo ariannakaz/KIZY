@@ -1,0 +1,79 @@
+h1{
+    text-align: center;
+    padding-top: 5;    
+}
+div{
+    text-align: center;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  top: 0px;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+
+.likert form{
+  float: left;
+}
+
+.likert li{
+  list-style: none;
+  display: inline;
+}
+#question2 {
+  display: none;
+}
+
+/* edit by Alex */
+#bttn {
+  background-color: #13CA25;
+  font-size: 16px;
+  color: white;
+  border-color: #11B221;
+  border-radius: 4px;
+  width: 100px;
+  height: 60px;
+}
+
+form, h1, h2, p, input {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+body {
+  background-image: url("https://wallpaperstream.com/wallpapers/full/white/Grid-Hexagonal-White-HD-Wallpaper.jpg");
+  margin: 0px;
+}
+/* edit by alex */
+
+/* new edit efosa */
+#question2 {
+  display: none;
+}
+#challenge {
+  display: none;
+
+}
+#next {
+  display: none;
+}

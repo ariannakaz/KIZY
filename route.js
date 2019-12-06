@@ -2,6 +2,10 @@ const router = require("express").Router();
 const exerciseModel = require('./models/exerciseModel.js');
 
 
+router.get('/', (req, res) => {
+    res.redirect('./shellSurvey.html');
+  });
+
 router.get("/exer", (req, res) => {
   exerciseModel.find((err, exercises) => {
       if (err) {
@@ -13,7 +17,7 @@ router.get("/exer", (req, res) => {
 });
 
 router.get("/search", (req, res) => {
-    let query = {category: 'mental'};
+    let query = {category: req.query.category};
     
     // Check if genre was supplied in query string
     if (req.query.category) {

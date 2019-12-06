@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Shell Website</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- below mobile device adapted by Alex -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="shell.js" defer></script>
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <h1>Poise</h1>
+    
+    <div class="likert">
+    
+    <form id="q1">
+    <p>Question 1: How many minutes do you have?</p>
+    <li><input type="radio" name="number" value="5" id = "5"><label>5</label></li>
+    <li> <input type="radio" name="number" value="10" id = "10"> <label>10</label></li>
+    <li><input type="radio" name="number" value="15" id = "15"> <label >15</label></li>
+    <li><input type="radio" name="number" value="20" id = "20"> <label>20</label> </li>
+    <li> <input type="radio" name="number" value="30" id = "30"> <label>30</label></li>
+    </form>
+    </div>
+    <br>
+    <div id="question2">
+    <p>Question 2: What kind of exercises do you want?</p>
+        <input type="button" value="Physical" name="physical"  id = "physbtn"/>
+        <input type="button" value="Mental" name="mental"  id = "mentbtn"/>
+        <input type="button" value="Both" name=""  id = "bothbtn"/>
+    </div>
+    <div id = "next">
+        <input type="button" value="Get my workout!" id= "workout">
+    </div>
+    <div id="workout">
+        <ul>
+
+        </ul>
+    </div>
+    </div>
+</body>
