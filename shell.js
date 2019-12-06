@@ -1,5 +1,7 @@
 // radio value minutes
 let radioNum = 0;
+// button value physical or mental
+let typeExcercise = "";
 
 $(".likert").click( function () {
     // alex edit
@@ -19,23 +21,21 @@ $(".likert").click( function () {
         radioNum = document.getElementById("30").value
     }  
 
-    document.getElementById("question2").style.display = "block";
     document.getElementById("q1").style.display = "none";
-})
 
-$("#question2").click( function () {
-    document.getElementById("question2").style.display = "none";
     document.getElementById("next").style.display = "block";
-    
 })
-// $("#question2").click( function () {
-    
-// })
 
-// document.getElementById("type").addEventListener("click" , function (event) {
-//    // $("#toMain").attr("action", "shellMain.html" );
-    
-// })
+// so the webpage knows only physical excerises
+$(".phys").click( function () {
+    typeExcercise = document.getElementsByClassName('phys')[0].value;
+})
+
+// so the webpage knows only mental excerises
+$(".ment").click( function ()  {
+    typeExcercise = document.getElementsByClassName('ment')[0].value;
+})
+
 $("#ptab").click( function () {
     document.getElementById("challenge").style.display = "block";
     $("#type").attr("action", "shellPhysical.html");
@@ -44,8 +44,3 @@ $("#mtab").click( function () {
     document.getElementById("challenge").style.display = "block";
     $("#type").attr("action", "shellMental.html");
 })
-
-/*
-function url() {
-    window.location.href = 'Handler1.ashx?username' 
-}*/
