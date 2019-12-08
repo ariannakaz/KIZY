@@ -16,7 +16,7 @@
 
 ## Overview of Project:
 Poise:
-A website that designs a workout combining mental and physical exercises with the goal of reducing stress and anxiety.
+Poise is a site designed to combine both mental and physical exercises with the goal of helping users focus on their mind and body in one place. As college students, we know firsthand how a busy schedule can lead to stress and anxiety, limiting the time available to work on mental and physical health. With this in mind, we wanted users to quickly get tailored short workouts that could help them relax and unwind, encouraging better health and reducing anxiety. By having both the mental and physical in one place, users can ensure they are using their time effectively.
 
 ## Topic Requirements:
 *Mobile 
