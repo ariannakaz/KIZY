@@ -61,7 +61,7 @@ $("#physbtn").on("click", function(){
   };
 
 function getWorkout() {
-    let $list = $("ul");
+    let $list = $("ol");
     $list.empty();
     let count=0;
 
@@ -70,7 +70,6 @@ function getWorkout() {
             var data = [];
             data.push(exercises);
             data=shuffle(data[0]);
-            console.log(data);
             while (count<radioNum){
                 $list.append("<li>" + data[count]["name"] + " - " + data[count]['description'] + "</li>");
                 count++;
@@ -79,13 +78,30 @@ function getWorkout() {
     )} 
     else {
         $.get("/search", {category:fired_button}, function(exercises) {
-            var data = [];
+            let excess=0;
+            let data = [];
             data.push(exercises);
-            console.log(data);
-            while (count<radioNum){
-                $list.append("<li>" + data[0][count]["name"] + " - " + data[0][count]['description'] + "</li>");
-                count++;
+            data=shuffle(data[0]);
+            if (radioNum>data.length){
+                excess=radioNum-data.length;
+                while (count<data.length){
+                    $list.append("<li>" + data[count]["name"] + " - " + data[count]['description'] + "</li>");
+                    count++;
+                }
+                count=0;
+                data=shuffle(data);
+                while (count<excess){
+                    $list.append("<li>" + data[count]["name"] + " - " + data[count]['description'] + "</li>");
+                    count++;
+                }
             }
+            else {
+                while (count<radioNum){
+                    $list.append("<li>" + data[count]["name"] + " - " + data[count]['description'] + "</li>");
+                    count++;
+                }
+            }
+            
         })
     }
 };
