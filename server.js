@@ -1,4 +1,18 @@
 const express = require('express');
+
+const app = express();
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose');
+const route = require('./route.js');
+
+app.use(express.static('public')); // Make sure it comes back as json
+app.use(bodyParser.json());
+
+const router = express.Router();
+
+const connectionURL = process.env.MONGO_URL;
+
+
 const mongoose = require('mongoose');
 const route = require('./route');
 
@@ -18,7 +32,9 @@ mongoose.connect("mongodb+srv://"+username+":"+pw+"@cluster0-ii2lz.mongodb.net/e
 
 app.use(route);
 
-app.listen(3000, () => { console.log('Server is running...') });
+
+app.listen(1111, () => { console.log('Server is running...') });
+
 
 
 
