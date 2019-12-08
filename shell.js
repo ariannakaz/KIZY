@@ -19,7 +19,6 @@ $(".likert").click( function () {
         radioNum = document.getElementById("30").value
     }  
 
-
     document.getElementById("question2").style.display = "block";
     document.getElementById("q1").style.display = "none";
 });
@@ -111,13 +110,3 @@ $("#workout").on("click", function(){
     document.getElementById("workout").style.display = "none";
     getWorkout();
 })
-
-/*$("#ptab").click( function () {
-    document.getElementById("challenge").style.display = "block";
-    $("#type").attr("action", "shellPhysical.html");
-})
-$("#mtab").click( function () {
-    document.getElementById("challenge").style.display = "block";
-    $("#type").attr("action", "shellMental.html");
-})*/
-
