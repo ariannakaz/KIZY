@@ -41,26 +41,59 @@ $("#physbtn").on("click", function(){
      fired_button = "";
   });
 
-$("#workout").on("click", function(){
-    const $list = $("ul");
-  // Remove previous songs.
-    $list.empty();
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  };
 
+function getWorkout() {
+    let $list = $("ul");
+    $list.empty();
+    let count=0;
+
+    if (fired_button==""){
+        $.get("/search", function(exercises) {
+            var data = [];
+            data.push(exercises);
+            data=shuffle(data[0]);
+            console.log(data);
+            while (count<radioNum){
+                $list.append("<li>" + data[count]["name"] + " - " + data[count]['description'] + "</li>");
+                count++;
+            }
+        }
+    )} 
+    else {
+        $.get("/search", {category:fired_button}, function(exercises) {
+            var data = [];
+            data.push(exercises);
+            console.log(data);
+            while (count<radioNum){
+                $list.append("<li>" + data[0][count]["name"] + " - " + data[0][count]['description'] + "</li>");
+                count++;
+            }
+        })
+    }
+};
+
+$("#workout").on("click", function(){
     document.getElementById("question2").style.display = "none";
     document.getElementById("workout").style.display = "none";
-
-    function getWorkout() {
-    $.get("/search", function({category: fired_button}) {
-        let count=0;
-        while (count<radioNum){
-            exercises.forEach(function(exercise) {
-                $list.append("<li>" + exercise.name + " - " + 
-                exercise.description + ")" + "</li>");
-                count++;
-            });
-        };
-    });
-  }
+    getWorkout();
 })
 
 /*$("#ptab").click( function () {

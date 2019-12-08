@@ -17,8 +17,7 @@ router.get("/exer", (req, res) => {
 });
 
 router.get("/search", (req, res) => {
-    let query = {category: req.query.category};
-    
+    let query = {};
     // Check if genre was supplied in query string
     if (req.query.category) {
         query = { category: [ req.query.category ] };
