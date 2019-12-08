@@ -12,15 +12,6 @@ const router = express.Router();
 
 const connectionURL = process.env.MONGO_URL;
 
-
-const mongoose = require('mongoose');
-const route = require('./route');
-
-const app = express();
-app.use(express.json()); // Make sure it comes back as json
-
-const connectionURL = process.env.MONGO_URL;
-
 const username = process.argv[2].split('=')[1]
 const pw = process.argv[3].split('=')[1]
 console.log(`Hello, ${username}, ${pw}`)
