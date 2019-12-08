@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
@@ -11,10 +12,18 @@ const router = express.Router();
 
 const connectionURL = process.env.MONGO_URL;
 
+
+const mongoose = require('mongoose');
+const route = require('./route');
+
+const app = express();
+app.use(express.json()); // Make sure it comes back as json
+
+const connectionURL = process.env.MONGO_URL;
+
 const username = process.argv[2].split('=')[1]
 const pw = process.argv[3].split('=')[1]
 console.log(`Hello, ${username}, ${pw}`)
-
 
 mongoose.connect("mongodb+srv://"+username+":"+pw+"@cluster0-ii2lz.mongodb.net/exercises?retryWrites=true&w=majority", 
   { useNewUrlParser: true,
@@ -23,7 +32,9 @@ mongoose.connect("mongodb+srv://"+username+":"+pw+"@cluster0-ii2lz.mongodb.net/e
 
 app.use(route);
 
+
 app.listen(1111, () => { console.log('Server is running...') });
+
 
 
 
