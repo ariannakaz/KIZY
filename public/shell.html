@@ -5,6 +5,8 @@
     <title> Shell Website</title>
     <!-- below mobile device adapted by Alex -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="jquery-3.2.1.min.js"></script>
+
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,9 +20,12 @@
             <a class="navbar-brand" href="#"></a>
           
             <!-- Collapse button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                  class="fas fa-bars fa-1x"></i></span></button>
+            <button class="navbar-toggle toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="black-text">
+                
+                <i class="fa fa-bars"></i></span>
+              </button>
           
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -28,14 +33,12 @@
               <!-- Links -->
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Nothing 1<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Nothing 2</a>
+                  <a class="nav-link" href="shellSurvey.html">Survey</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nothing 3</a>
-                </li>
+    
               </ul>
               <!-- Links -->
           
@@ -46,11 +49,17 @@
           <!--/.Navbar-->
 
     <h1>Poise</h1>
+
+    <div>
+      <h3>
+        Welcome to Poise. Design a workout with exercises that help your body and your mind. 
+      </h3>
+    </div>
     
     <div>
        <form action="shellSurvey.html">
            <!-- added id bttn by alex -->
-            <input type="submit" id = "bttn" value="GO" style = "font-size: 20px !important;" />
+            <input type="submit" id = "bttn" value="Start" style = "font-size: 20px !important;" />
         </form>
     </div>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title> Shell Website</title>
     <!-- below mobile device adapted by Alex -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,40 @@
 
 </head>
 <body>
-    <h1>Poise</h1>    
+    <!--Navbar-->
+    <nav class="navbar navbar-light light-blue lighten-4">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#"></a>
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-black-text"><i
+                  class="fa fa-bars "></i></span></button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          
+              <!-- Links -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="shell.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shellSurvey.html">Survey</a>
+                </li>
+    
+              </ul>
+              <!-- Links -->
+          
+            </div>
+            <!-- Collapsible content -->
+          
+          </nav>
+          <!--/.Navbar-->
+
+    <h1>Poise</h1>
+    
     <div class="likert">
     
     <form id="q1">
@@ -26,21 +59,19 @@
     </form>
     </div>
     <br>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <div id="question2">
     <p>Question 2: What kind of exercises do you want?</p>
-        <input type="button" value="Physical" name="physical"  id = "physbtn"/>
-        <input type="button" value="Mental" name="mental"  id = "mentbtn"/>
-        <input type="button" value="Both" name=""  id = "bothbtn"/>
+        <input type="button" value="Physical" name="physical"  id = "physbtn" style = "border-color: black; font-size: 20px  !important;">
+        <input type="button" value="Mental" name="mental"  id = "mentbtn" style = "border-color: black; font-size: 20px  !important;"/>
+        <input type="button" value="Both" name=""  id = "bothbtn" style = "border-color: black; font-size: 20px  !important;"/>
     </div>
     <div id = "next">
-        <input type="button" value="Get my workout!" id= "workout">
+        <input type="button" value="Get my workout!" id= "workout" style = "margin: 10px; border-color: black; font-size: 20px  !important;">
     </div>
     
-    <ul>
+    <ol>
 
-    </ul>
-   
+    </ol>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
