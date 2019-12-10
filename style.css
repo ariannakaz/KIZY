@@ -1,0 +1,90 @@
+h3{
+    text-align: center;
+        
+}
+div{
+    text-align: center;
+}
+
+#center{
+  
+      /* display: flex;
+      align-items: center; */
+    position: absolute;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right:0; 
+    vertical-align: middle;
+    /*  width: 50px;*/  
+        /*left: 15%;
+        text-align: center;
+        top:40%;*/
+}
+#logo {
+  position: fixed;
+  right:10px;
+  bottom: 10px;
+  height: 10%;
+ /* width: 10%;*/
+}
+
+.fa-1x {
+  font-size: 1.5rem !important;
+  }
+  .navbar-toggler.toggler-example {
+  cursor: pointer !important;
+  }
+  .dark-blue-text {
+  color: #0A38F5 !important;
+  }
+  .dark-pink-text {
+  color: #AC003A !important;
+  }
+  .dark-amber-text {
+  color: #ff6f00 !important;
+  }
+  .dark-teal-text {
+  color: #004d40 !important;
+  }
+
+  #q1 {
+    font-size: 30px;
+  }
+
+.likert li{
+  list-style: none;
+  display: inline;
+}
+#question2 {
+  display: none;
+  font-size: 30px;
+}
+
+/* edit by Alex */
+#bttn {
+  background-color: rgb(73, 71, 71);
+  font-size: 16px;
+  color: white;
+  border-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  width: 100px;
+  height: 60px;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/130061.png");
+  margin: 0px;
+}
+/* edit by alex */
+
+/* new edit efosa */
+
+#challenge {
+  display: none;
+
+}
+#next {
+  display: none;
+}
