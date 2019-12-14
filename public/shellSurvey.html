@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> Shell Website</title>
+    <title> Poise</title>
     <!-- below mobile device adapted by Alex -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="shell.js" defer></script>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="shell.js" defer></script>
-    <script src="jquery-3.2.1.min.js"></script>
 
 </head>
 <body>
@@ -21,19 +21,20 @@
           
             <!-- Collapse button -->
             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-black-text"><i
-                  class="fa fa-bars "></i></span></button>
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="dark-blue-text">
+                <i class="fa fa-bars"></i></span></button>
           
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">
           
               <!-- Links -->
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="shell.html">Home<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="shellSurvey.html">Survey</a>
+                  <a class="nav-link" href="shell.html">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="shellSurvey.html">Survey<span class="sr-only">(current)</span></a>
                 </li>
     
               </ul>
@@ -44,8 +45,8 @@
           
           </nav>
           <!--/.Navbar-->
-
-    <h1>Poise</h1>
+<div id= "center"  class="  align-items-center justify-content-center">
+    
     
     <div class="likert">
     
@@ -68,10 +69,14 @@
     <div id = "next">
         <input type="button" value="Get my workout!" id= "workout" style = "margin: 10px; border-color: black; font-size: 20px  !important;">
     </div>
+    </div>
     
-    <ol>
+    <ol id="list">
 
     </ol>
+    <img src="croplogo.png" class="img-rounded img-fluid" id="logo"></img>
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
