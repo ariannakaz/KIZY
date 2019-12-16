@@ -3,7 +3,7 @@ const exerciseModel = require('./models/exerciseModel.js');
 
 
 router.get('/', (req, res) => {
-    res.redirect('./shellSurvey.html');
+    res.redirect('./shell.html');
   });
 
 router.get("/exer", (req, res) => {
