@@ -1,9 +1,33 @@
-h1{
+h3{
     text-align: center;
-    padding-top: 5;    
+        
 }
 div{
     text-align: center;
+}
+
+#center{
+  
+      /* display: flex;
+      align-items: center; */
+    position: absolute;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right:0; 
+    vertical-align: middle;
+    /*  width: 50px;*/  
+        /*left: 15%;
+        text-align: center;
+        top:40%;*/
+}
+#logo {
+  position: fixed;
+  right:10px;
+  bottom: 10px;
+  height: 10%;
+ /* width: 10%;*/
 }
 
 .fa-1x {
@@ -56,7 +80,20 @@ body {
 /* edit by alex */
 
 /* new edit efosa */
+#timer{
+  position: absolute;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right:0; 
+    vertical-align: middle;
 
+  display: none;
+}
+#lp{
+  display: none;
+}
 #challenge {
   display: none;
 
