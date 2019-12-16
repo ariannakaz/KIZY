@@ -80,7 +80,20 @@ body {
 /* edit by alex */
 
 /* new edit efosa */
+#timer{
+  position: absolute;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right:0; 
+    vertical-align: middle;
 
+  display: none;
+}
+#lp{
+  display: none;
+}
 #challenge {
   display: none;
 

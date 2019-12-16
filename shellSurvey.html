@@ -6,10 +6,13 @@
     <!-- below mobile device adapted by Alex -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="shell.js" defer></script>
-    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script> 
+    
+    
+                 
 
 </head>
 <body>
@@ -68,12 +71,44 @@
     <div id = "next">
         <input type="button" value="Get my workout!" id= "workout" style = "margin: 10px; border-color: black; font-size: 20px  !important;">
     </div>
-    </div>
-    
-    <ol id="list">
+  </div>
 
-    </ol>
+  <div id="timer">
+    <h3 id="LOL">Ready? (Hit Start!) </h3>
+
+  
+  <ol id="list" style="list-style: none;" >
+
+  </ol>
+
+ <div id="chronoExample">
+   <div class="values">00:01:00</div>
+    <div>
+        <button class="startButton">Start</button>
+        <button class="pauseButton" >Pause</button>
+        <button class="stopButton">Stop</button>
+        <button class="resetButton">Reset</button>
+    </div>
+</div>
+<input type="button" value="Next" id="nextbtn" style="border-color: black; font-size: 20px  !important;">
+
+</div>
+<div id="lp">
+    
+   
+  
+</div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="dist/easytimer.min.js">
+      
+    </script>
+
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/easytimer@4.0.2/dist/easytimer.min.js"></script> -->
+
+      
+      <script src="shell.js" defer></script>
+
 </body>
